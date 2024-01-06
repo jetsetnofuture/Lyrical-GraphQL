@@ -18,6 +18,7 @@ class SongCreate extends Component {
         variables: {
           title: this.state.title,
         },
+        refetchQueries: [{ }]
       })
       .then(() => hashHistory.push('/'));
   }
